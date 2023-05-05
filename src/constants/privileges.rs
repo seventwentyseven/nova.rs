@@ -69,9 +69,8 @@ bitflags! {
         const Tournament = 1  <<  5;  // NOTE: not used in communications with osu! client
     }
 }
-
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
-enum ClanPrivileges {
+pub enum ClanPrivileges {
     Member = 1,
     Officer = 2,
     Owner = 3,
