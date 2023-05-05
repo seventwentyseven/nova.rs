@@ -75,3 +75,21 @@ pub enum ClanPrivileges {
     Officer = 2,
     Owner = 3,
 }
+
+impl std::fmt::Display for Privileges {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        return writeln!(f, "{:?}", self);
+    }
+}
+
+impl std::fmt::Display for ClientPrivileges {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        return writeln!(f, "{:?}", self);
+    }
+}
+
+impl std::fmt::Display for ClanPrivileges {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        return writeln!(f, "{:?}", self);
+    }
+}
