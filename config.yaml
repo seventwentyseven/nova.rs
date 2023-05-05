@@ -1,0 +1,29 @@
+General:
+  domain: nikogodomena.me
+  path: /opt/nova_rs
+  host: "127.0.0.1"
+  port: 2137
+
+Server:
+  disallow_old_clients: true
+
+Services:
+  MySQL:
+    host: localhost
+    port: 3306
+    user: def750
+    password: thepassword
+    database: nova
+
+  Redis:
+    host: localhost
+    port: 6379
+    database: 0
+    password: ""
+
+  ElectronSearch:
+    host: localhost
+    port: 9200
+    index: nova
+    type: nova
+
