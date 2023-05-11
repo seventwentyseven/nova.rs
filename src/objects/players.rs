@@ -32,6 +32,6 @@ impl PlayerList {
         }
     }
     pub fn test() -> i8 {
-        return 0
+        return None
     }
 }
