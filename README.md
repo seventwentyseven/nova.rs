@@ -1,2 +1,2 @@
 # nova.rs
-Server in rust
+Server in rust on actix web
