@@ -21,9 +21,8 @@ Services:
     database: 0
     password: ""
 
-  ElectronSearch:
+  ElasticSearch:
     host: localhost
     port: 9200
     index: nova
-    type: nova
-
+    _type: nova
