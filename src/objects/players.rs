@@ -1,6 +1,6 @@
 use crate::constants::privileges::{ClientPrivileges, Privileges};
 
-#[derive(Debug, Copy, Clone)]
+#[derive(Debug, Clone)]
 pub struct Player {
     pub id: i32,
     pub username: String,
@@ -26,12 +26,9 @@ pub struct PlayerList {
     pub players: Vec<Player>,
 }
 impl PlayerList {
-    pub fn new() {
+    pub fn new() -> Self {
         Self {
             players: Vec::new(),
         }
-    }
-    pub fn test() -> i8 {
-        return None
     }
 }
