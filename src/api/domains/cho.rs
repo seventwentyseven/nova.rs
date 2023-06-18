@@ -7,7 +7,7 @@ pub fn cho_handler() -> Scope {
     //.service( user_avatar)
 }
 
-#TODO: Basic handler for login
+// TODO: Basic handler for login
 #[get("/")]
 async fn index() -> HttpResponse {
     HttpResponse::Ok()
