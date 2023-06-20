@@ -43,9 +43,9 @@ pub struct ElasticSearch {
 
 #[derive(Deserialize)]
 pub struct Services {
-    pub mysql: MySQL,
-    pub redis: Redis,
-    pub elasticsearch: ElasticSearch,
+    pub MySQL: MySQL,
+    pub Redis: Redis,
+    pub ElasticSearch: ElasticSearch,
 }
 
 #[derive(Deserialize)]

@@ -27,8 +27,13 @@ async fn main() -> io::Result<()> {
         // prod:
         // .wrap(actix_web::middleware::Logger::default())
     });
+    let addr = format!(
+        "{}:{}",
+        &config::CONFIG.General.host,
+        &config::CONFIG.General.port
+    );
 
-    println!("Running on: {}", config::CONFIG.General.host);
+    println!("Running on: {}", &addr);
     // TODO call config init before start
-    server.bind(&config::CONFIG.General.host)?.run().await
+    server.bind(&addr)?.run().await
 }
